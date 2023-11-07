@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
+        <h3> hi</h3>
         {children}
         </body>
     </html>
