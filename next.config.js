@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const debug = process.env.NODE_ENV !== 'production'
+const name = 'webgpu-app'
 
-module.exports = nextConfig
+module.exports = {
+  assetPrefix: !debug ? `/${name}/` : '',
+}
