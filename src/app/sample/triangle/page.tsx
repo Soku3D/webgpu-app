@@ -5,11 +5,12 @@ import Script from 'next/script'
 export default function Home() {
   
   return (
-    <>
-            
-        soku
-        
-            
+    
+    <> 
+       <Script src="../main.js" async />
+       <body>
+            <canvas id="gpuCanvas" width="800" height="600"></canvas>
+       </body>
         
     </>
   )
